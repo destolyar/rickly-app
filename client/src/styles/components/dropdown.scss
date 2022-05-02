@@ -1,0 +1,41 @@
+.app-dropdown {
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        background-color: lightgray;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__chevron {
+        margin-left: 16px;
+        transform: rotate(90deg);
+        width: 16px;
+        height: 16px;
+
+        &_opened {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 50px;
+        box-shadow: 0 0 1px lightgray;
+        border-radius: 4px;
+    }
+
+    &__item {
+        padding: 8px 16px;
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+}
